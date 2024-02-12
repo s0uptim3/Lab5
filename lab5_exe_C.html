@@ -206,7 +206,10 @@ Description : DOM Elements.
 		<script>
 			document.addEventListener('DOMContentLoaded', function afterRender() {
 				// Task 1: Set the text content of all elements with the class 'companyName' and remove their border
-
+				var elementsinCompany = document.getElementsByClassName('companyName');
+				elementsinCompany.array.forEach(element => {
+					elementsinCompany.border = 0;
+				});
 
 				// Task 2: Change the background color of the navigation bar
 				
